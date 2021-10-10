@@ -45,6 +45,7 @@ const smtpTransport = nodemailer.createTransport({
     auth: {
          type: "OAuth2",
          user: process.env['NODEMAILERUSER'], 
+        pass: process.env['NODEMAILERPASS'],
          clientId: process.env['CLIENTID'],
          clientSecret: process.env['CLIENTSECRET'],
          refreshToken: process.env['REFRESHTOKEN'],

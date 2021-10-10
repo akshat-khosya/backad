@@ -74,7 +74,7 @@ app.post("/regiss/singup", function (req, res) {
                 host = req.get('host');
                 rand=newEmail+rand;
                 console.log(host);
-                link = "http://" + host + "/verify?id=" + rand;
+                link = "http://" + "admissionportaliii.herokuapp.com"+ "/verify?id=" + rand;
                 mailOptions = {
                     to: newEmail,
                     subject: "Please confirm your Email account",
